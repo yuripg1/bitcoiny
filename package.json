@@ -1,0 +1,30 @@
+{
+  "name": "bitcoiny",
+  "version": "0.0.1",
+  "description": "Bitcoin wallet in pure Node.js",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha --recursive test",
+    "lint": "eslint .",
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuripg1/bitcoiny.git"
+  },
+  "author": "Yuri Pelz Gossmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuripg1/bitcoiny/issues"
+  },
+  "homepage": "https://github.com/yuripg1/bitcoiny#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0"
+  }
+}
