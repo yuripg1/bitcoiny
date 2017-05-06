@@ -1,7 +1,7 @@
 const assert = require('assert');
-const RootSeed = require('../lib/RootSeed.js');
+const { RootSeed } = require('../index.js');
 
-describe('Random root seed generation', () => {
+describe('[RootSeed] Random root seed generation', () => {
   it('From 256 bit entropy / Without password', () => {
     const rootSeed = new RootSeed(256);
     assert.strictEqual(typeof rootSeed, 'object');
@@ -133,7 +133,7 @@ describe('Random root seed generation', () => {
     assert.strictEqual(rootSeed.seed.length, 64);
   });
 });
-describe('Root seed loading', () => {
+describe('[RootSeed] Root seed loading', () => {
   it('From 24 words mnemonic sentence / Without password', () => {
     const rootSeed = new RootSeed('protect canoe globe prevent rule angle hill spot rack tomorrow cheap fire kite relief faith rocket seek wonder charge unhappy under congress start brick');
     assert.strictEqual(typeof rootSeed, 'object');
@@ -255,7 +255,7 @@ describe('Root seed loading', () => {
     assert.strictEqual(rootSeed.seed.toString('hex'), '4be26f5c72d3fd5a591e7e31c9c1d7dd30e963408fb89231461856cfdf555d948114094be2239583c3b6aa541a856959cff8137f711b78ade46c02130ad33d23');
   });
 });
-describe('Invalid arguments', () => {
+describe('[RootSeed] Invalid arguments', () => {
   it('No first argument', () => {
     let exceptionMessage;
     try {
