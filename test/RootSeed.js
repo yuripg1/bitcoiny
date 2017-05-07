@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { RootSeed } = require('../index.js');
+const RootSeed = require('../lib/RootSeed');
 
 describe('[RootSeed] Random root seed generation', () => {
   it('From 256 bit entropy / Without password', () => {

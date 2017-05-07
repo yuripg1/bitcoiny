@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { Base58Check } = require('../index.js');
+const Base58Check = require('../lib/Base58Check');
 const testValues = require('./base58TestValues');
 
 describe('[Base58Check] Base 58 encoding', () => {
