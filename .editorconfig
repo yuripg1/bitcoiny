@@ -1,6 +1,10 @@
-[*.{js,json}]
+root = true
+
+[*.{js,json,ts,editorconfig,md,gitignore}]
 charset = utf-8
 end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = true
+quote_type = single
+tri_trailing_whitespace = true
